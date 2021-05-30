@@ -4,7 +4,7 @@ sap.ui.define([
 	"sap/ui/model/json/JSONModel"
 ], function (MessageToast, Controller, JSONModel) {
 	"use strict";
-
+    //
 	return Controller.extend("sap.f.sample.Card.C", {
 		onInit: function () {
 			var oModel =  new JSONModel(sap.ui.require.toUrl("sap/f/sample/Card/model/data.json"));
