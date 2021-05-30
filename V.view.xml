@@ -1,0 +1,138 @@
+<mvc:View controllerName="sap.f.sample.Card.C" xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" xmlns:f="sap.f" xmlns:card="sap.f.cards"
+	xmlns:core="sap.ui.core" xmlns:viz="sap.viz.ui5.controls" xmlns:viz.feeds="sap.viz.ui5.controls.common.feeds"
+	xmlns:viz.data="sap.viz.ui5.data" displayBlock="true" height="100%">
+	<f:Card class="sapUiMediumMargin" width="600px">
+		<f:header>
+			<card:Header title="Sales History" subtitle=""/>
+		</f:header>
+		<f:content>
+			<VBox>
+				<viz:VizFrame id="idVizFrame" uiConfig="{applicationSet:'fiori'}" height="300px" width="100%" vizType='line'
+					vizProperties="{title:{ visible:false}}" legendVisible="false">
+					<viz:dataset>
+						<viz.data:FlattenedDataset data="{/salesHistory}">
+							<viz.data:dimensions>
+								<viz.data:DimensionDefinition name="Date" value="{ShippedDate}"/>
+							</viz.data:dimensions>
+							<viz.data:measures>
+								<viz.data:MeasureDefinition name="Sales Amount" value="{SaleAmount}"/>
+							</viz.data:measures>
+						</viz.data:FlattenedDataset>
+					</viz:dataset>
+					<viz:feeds>
+						<viz.feeds:FeedItem id='valueAxisFeed' uid="valueAxis" type="Measure" values="Sales Amount"/>
+						<viz.feeds:FeedItem id='categoryAxisFeed' uid="categoryAxis" type="Dimension" values="Date"/>
+					</viz:feeds>
+				</viz:VizFrame>
+			</VBox>
+		</f:content>
+	</f:Card>
+	<f:Card class="sapUiMediumMargin" width="300px">
+		<f:header>
+			<card:Header title="Products"/>
+		</f:header>
+		<f:content>
+			<List showSeparators="None" items="{ path: '/productItems' }">
+				<CustomListItem>
+					<HBox alignItems="Center" justifyContent="SpaceBetween">
+						<VBox class="sapUiSmallMarginBegin sapUiSmallMarginTopBottom">
+							<Title level="H3" text="{title}"/>
+							<Text text="{subtitle}"/>
+						</VBox>
+						<ObjectStatus class="sapUiTinyMargin sapUiSmallMarginEnd" text="{revenue}" state="{statusSchema}"/>
+					</HBox>
+				</CustomListItem>
+			</List>
+		</f:content>
+	</f:Card>
+	<f:Card class="sapUiMediumMargin" width="300px">
+		<f:header>
+			<card:Header title="Products by Categories" subtitle=""/>
+		</f:header>
+		<f:content>
+			<List showSeparators="None" items="{ path: '/productsByCategories' }">
+				<CustomListItem highlight="{= ${Discontinued} ? 'Error' : 'None'}">
+					<HBox alignItems="Center" justifyContent="SpaceBetween">
+						<VBox class="sapUiSmallMarginBegin sapUiSmallMarginTopBottom">
+							<Title level="H3" text="{ProductName}"/>
+							<Text text="{CategoryName}"/>
+						</VBox>
+						<ObjectStatus class="sapUiTinyMargin sapUiSmallMarginEnd" text="{QuantityPerUnit} {UnitsInStock}"/>
+					</HBox>
+				</CustomListItem>
+			</List>
+		</f:content>
+	</f:Card>
+	<f:Card class="sapUiMediumMargin" width="400px">
+		<f:header>
+			<card:Header title="Employees" subtitle=""/>
+		</f:header>
+		<f:content>
+			<Table showSeparators="None" items="{ path: '/employees' }">
+				<columns>
+					<Column>
+						<Text text="Name"/>
+					</Column>
+					<Column>
+						<Text text="Designation"/>
+					</Column>
+					<Column>
+						<Text text="Phone"/>
+					</Column>
+				</columns>
+				<ColumnListItem>
+					<cells>
+						<Text text="{FirstName} {LastName}"/>
+						<Text text="{Title}"/>
+						<Text text="{HomePhone}"/>
+					</cells>
+				</ColumnListItem>
+			</Table>
+		</f:content>
+	</f:Card>
+	<f:Card class="sapUiMediumMargin" width="400px">
+		<f:header>
+			<card:Header title="Franchise Trend" subtitle=""/>
+		</f:header>
+		<f:content>
+			<VBox>
+				<viz:VizFrame id="idVizFrameDonut" uiConfig="{applicationSet:'fiori'}"
+					vizProperties="{plotArea: { dataLabel: { visible: true } },title:{ visible:false}}" height='300px' width="100%" vizType='donut'>
+					<viz:dataset>
+						<viz.data:FlattenedDataset data="{/donut}">
+							<viz.data:dimensions>
+								<viz.data:DimensionDefinition name="Store Name" value="{Store Name}"/>
+							</viz.data:dimensions>
+							<viz.data:measures>
+								<viz.data:MeasureDefinition name="Revenue" value="{Revenue}"/>
+							</viz.data:measures>
+						</viz.data:FlattenedDataset>
+					</viz:dataset>
+					<viz:feeds>
+						<viz.feeds:FeedItem id="donutMeasure" uid="size" type="Measure" values="Revenue"/>
+						<viz.feeds:FeedItem id="donutDimension" uid="color" type="Dimension" values="Store Name"/>
+					</viz:feeds>
+				</viz:VizFrame>
+			</VBox>
+		</f:content>
+	</f:Card>
+	<f:Card class="sapUiMediumMargin" width="400px">
+		<f:header>
+			<card:Header title="Sales History" subtitle=""/>
+		</f:header>
+		<f:content>
+			<VBox>
+				<QuickViewCard id="quickViewCard" pages="{ path : '/pages', templateShareable : true }" navigate=".onNavigate"
+					afterNavigate=".onAfterNavigate">
+					<QuickViewPage pageId="{pageId}" header="{header}" icon="{icon}" title="{title}" titleUrl="{titleUrl}" description="{description}"
+						groups="{ path: 'groups', templateShareable: true }">
+						<QuickViewGroup heading="{heading}" elements="{ path: 'elements', templateShareable: true }">
+							<QuickViewGroupElement label="{label}" value="{value}" url="{url}" type="{elementType}" pageLinkId="{pageLinkId}"
+								emailSubject="{emailSubject}" target="{target}"/>
+						</QuickViewGroup>
+					</QuickViewPage>
+				</QuickViewCard>
+			</VBox>
+		</f:content>
+	</f:Card>
+</mvc:View>

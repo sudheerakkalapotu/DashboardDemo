@@ -1,0 +1,245 @@
+{
+	"productItems": [{
+		"title": "Notebook HT",
+		"subtitle": "ID23452256-D44",
+		"revenue": "27.25K EUR",
+		"status": "success",
+		"statusSchema": "Success"
+	}, {
+		"title": "Notebook XT",
+		"subtitle": "ID27852256-D47",
+		"revenue": "7.35K EUR",
+		"status": "exceeded",
+		"statusSchema": "Error"
+	}, {
+		"title": "Notebook ST",
+		"subtitle": "ID123555587-I05",
+		"revenue": "22.89K EUR",
+		"status": "warning",
+		"statusSchema": "Warning"
+	},
+	{
+		"title": "Notebook XT",
+		"subtitle": "ID27852256-D47",
+		"revenue": "7.35K EUR",
+		"status": "exceeded",
+		"statusSchema": "Error"
+	}
+	],
+
+	"employees": [{
+		"__metadata": {
+			"uri": "https://services.odata.org/V2/Northwind/Northwind.svc/Employees(1)",
+			"type": "NorthwindModel.Employee"
+		},
+		"LastName": "Davolio",
+		"FirstName": "Nancy",
+		"Title": "Sales Representative",
+		"HomePhone": "(206) 555-9857"
+	}, {
+		"__metadata": {
+			"uri": "https://services.odata.org/V2/Northwind/Northwind.svc/Employees(2)",
+			"type": "NorthwindModel.Employee"
+		},
+		"LastName": "Fuller",
+		"FirstName": "Andrew",
+		"Title": "Vice President, Sales",
+		"HomePhone": "(206) 555-9482"
+	}, {
+		"__metadata": {
+			"uri": "https://services.odata.org/V2/Northwind/Northwind.svc/Employees(3)",
+			"type": "NorthwindModel.Employee"
+		},
+		"LastName": "Leverling",
+		"FirstName": "Janet",
+		"Title": "Sales Representative",
+		"HomePhone": "(206) 555-3412"
+	}, {
+		"__metadata": {
+			"uri": "https://services.odata.org/V2/Northwind/Northwind.svc/Employees(4)",
+			"type": "NorthwindModel.Employee"
+		},
+		"LastName": "Peacock",
+		"FirstName": "Margaret",
+		"Title": "Sales Representative",
+		"HomePhone": "(206) 555-8122"
+	}],
+
+	"salesHistory": 
+[
+{
+"__metadata": {
+"uri": "https://services.odata.org/V2/Northwind/Northwind.svc/Sales_Totals_by_Amounts(CompanyName='Berglunds%20snabbk%C3%B6p',OrderID=10524)", "type": "NorthwindModel.Sales_Totals_by_Amount"
+}, "SaleAmount": "3192.6500", "OrderID": 10524, "CompanyName": "Berglunds snabbk\u00f6p", "ShippedDate": "\/Date(862963200000)\/"
+}, {
+"__metadata": {
+"uri": "https://services.odata.org/V2/Northwind/Northwind.svc/Sales_Totals_by_Amounts(CompanyName='Berglunds%20snabbk%C3%B6p',OrderID=10672)", "type": "NorthwindModel.Sales_Totals_by_Amount"
+}, "SaleAmount": "3815.2500", "OrderID": 10672, "CompanyName": "Berglunds snabbk\u00f6p", "ShippedDate": "\/Date(875232000000)\/"
+}, {
+"__metadata": {
+"uri": "https://services.odata.org/V2/Northwind/Northwind.svc/Sales_Totals_by_Amounts(CompanyName='B%C3%B3lido%20Comidas%20preparadas',OrderID=10801)", "type": "NorthwindModel.Sales_Totals_by_Amount"
+}, "SaleAmount": "3026.8500", "OrderID": 10801, "CompanyName": "B\u00f3lido Comidas preparadas", "ShippedDate": "\/Date(883526400000)\/"
+}, {
+"__metadata": {
+"uri": "https://services.odata.org/V2/Northwind/Northwind.svc/Sales_Totals_by_Amounts(CompanyName='Bon%20app''',OrderID=10511)", "type": "NorthwindModel.Sales_Totals_by_Amount"
+}, "SaleAmount": "2550.0000", "OrderID": 10511, "CompanyName": "Bon app'", "ShippedDate": "\/Date(861580800000)\/"
+}, {
+"__metadata": {
+"uri": "https://services.odata.org/V2/Northwind/Northwind.svc/Sales_Totals_by_Amounts(CompanyName='Bottom-Dollar%20Markets',OrderID=10742)", "type": "NorthwindModel.Sales_Totals_by_Amount"
+}, "SaleAmount": "3118.0000", "OrderID": 10742, "CompanyName": "Bottom-Dollar Markets", "ShippedDate": "\/Date(879811200000)\/"
+}, {
+"__metadata": {
+"uri": "https://services.odata.org/V2/Northwind/Northwind.svc/Sales_Totals_by_Amounts(CompanyName='Eastern%20Connection',OrderID=10400)", "type": "NorthwindModel.Sales_Totals_by_Amount"
+}, "SaleAmount": "3063.0000", "OrderID": 10400, "CompanyName": "Eastern Connection", "ShippedDate": "\/Date(853372800000)\/"
+}, {
+"__metadata": {
+"uri": "https://services.odata.org/V2/Northwind/Northwind.svc/Sales_Totals_by_Amounts(CompanyName='Ernst%20Handel',OrderID=10402)", "type": "NorthwindModel.Sales_Totals_by_Amount"
+}, "SaleAmount": "2713.5000", "OrderID": 10402, "CompanyName": "Ernst Handel", "ShippedDate": "\/Date(852854400000)\/"
+}, {
+"__metadata": {
+"uri": "https://services.odata.org/V2/Northwind/Northwind.svc/Sales_Totals_by_Amounts(CompanyName='Ernst%20Handel',OrderID=10430)", "type": "NorthwindModel.Sales_Totals_by_Amount"
+}, "SaleAmount": "4899.2000", "OrderID": 10430, "CompanyName": "Ernst Handel", "ShippedDate": "\/Date(854928000000)\/"
+}, {
+"__metadata": {
+"uri": "https://services.odata.org/V2/Northwind/Northwind.svc/Sales_Totals_by_Amounts(CompanyName='Ernst%20Handel',OrderID=10514)", "type": "NorthwindModel.Sales_Totals_by_Amount"
+}, "SaleAmount": "8623.4500", "OrderID": 10514, "CompanyName": "Ernst Handel", "ShippedDate": "\/Date(863740800000)\/"
+}, {
+"__metadata": {
+"uri": "https://services.odata.org/V2/Northwind/Northwind.svc/Sales_Totals_by_Amounts(CompanyName='Ernst%20Handel',OrderID=10595)", "type": "NorthwindModel.Sales_Totals_by_Amount"
+}, "SaleAmount": "4725.0000", "OrderID": 10595, "CompanyName": "Ernst Handel", "ShippedDate": "\/Date(868838400000)\/"
+}, {
+"__metadata": {
+"uri": "https://services.odata.org/V2/Northwind/Northwind.svc/Sales_Totals_by_Amounts(CompanyName='Ernst%20Handel',OrderID=10633)", "type": "NorthwindModel.Sales_Totals_by_Amount"
+}, "SaleAmount": "5510.5900", "OrderID": 10633, "CompanyName": "Ernst Handel", "ShippedDate": "\/Date(871862400000)\/"
+}, {
+"__metadata": {
+"uri": "https://services.odata.org/V2/Northwind/Northwind.svc/Sales_Totals_by_Amounts(CompanyName='Ernst%20Handel',OrderID=10698)", "type": "NorthwindModel.Sales_Totals_by_Amount"
+}, "SaleAmount": "3436.4500", "OrderID": 10698, "CompanyName": "Ernst Handel", "ShippedDate": "\/Date(877046400000)\/"
+}
+],
+	"productsByCategories" : [
+{
+"__metadata": {
+"uri": "https://services.odata.org/V2/Northwind/Northwind.svc/Products_by_Categories(CategoryName='Beverages',Discontinued=false,ProductName='Chai')", "type": "NorthwindModel.Products_by_Category"
+}, "CategoryName": "Beverages", "ProductName": "Chai", "QuantityPerUnit": "10 boxes x 20 bags", "UnitsInStock": 39, "Discontinued": false
+}, {
+"__metadata": {
+"uri": "https://services.odata.org/V2/Northwind/Northwind.svc/Products_by_Categories(CategoryName='Beverages',Discontinued=false,ProductName='Chang')", "type": "NorthwindModel.Products_by_Category"
+}, "CategoryName": "Beverages", "ProductName": "Chang", "QuantityPerUnit": "24 - 12 oz bottles", "UnitsInStock": 17, "Discontinued": true
+}, {
+"__metadata": {
+"uri": "https://services.odata.org/V2/Northwind/Northwind.svc/Products_by_Categories(CategoryName='Beverages',Discontinued=false,ProductName='Chartreuse%20verte')", "type": "NorthwindModel.Products_by_Category"
+}, "CategoryName": "Beverages", "ProductName": "Chartreuse verte", "QuantityPerUnit": "750 cc per bottle", "UnitsInStock": 69, "Discontinued": false
+}, {
+"__metadata": {
+"uri": "https://services.odata.org/V2/Northwind/Northwind.svc/Products_by_Categories(CategoryName='Beverages',Discontinued=false,ProductName='Ipoh%20Coffee')", "type": "NorthwindModel.Products_by_Category"
+}, "CategoryName": "Beverages", "ProductName": "Ipoh Coffee", "QuantityPerUnit": "16 - 500 g tins", "UnitsInStock": 17, "Discontinued": true
+}
+],
+"donut": [
+    {
+        "Store Name": "Alexei's Specialities",
+        "Revenue": 1331176.706884,
+        "Cost": 233160.58,
+        "Consumption": 143432.18
+    },
+    {
+        "Store Name": "BC Market",
+        "Revenue": 1878466.82,
+        "Cost": 235072.19,
+        "Consumption": 487910.26
+    },
+  
+    {
+        "Store Name": "Dairy World",
+        "Revenue": 752565.16,
+        "Cost": 115844.26,
+        "Consumption": 98268.9597904
+    }],
+    
+    	"pages": [
+		{
+			"pageId": "companyPageId",
+			"header": "Company info",
+			"title": "Adventure Company",
+			"titleUrl": "http://sap.com",
+			"icon": "sap-icon://building",
+			"description": "John Doe",
+			"groups": [
+				{
+					"heading": "Contact Details",
+					"elements": [
+						{
+							"label": "Phone",
+							"value": "+001 6101 34869-0",
+							"elementType": "phone"
+						},
+						{
+							"label": "Address",
+							"value": "550 Larkin Street, 4F, Mountain View, CA, 94102 San Francisco USA",
+							"elementType": "text"
+						}
+					]
+				},
+				{
+					"heading": "Main Contact",
+					"elements": [
+					
+						{
+							"label": "Phone",
+							"value": "+001 6101 34869-0",
+							"elementType": "phone"
+						},
+						{
+							"label": "Email",
+							"value": "main.contact@company.com",
+							"emailSubject": "Subject",
+							"elementType": "email"
+						}
+					]
+				}
+			]
+		},
+		{
+			"pageId": "companyEmployeePageId",
+			"header": "Employee Info",
+			"title": "John Doe",
+			"icon": "sap-icon://person-placeholder",
+			"description": "Department Manager",
+			"groups": [
+				{
+					"heading": "Company",
+					"elements": [
+						{
+							"label": "Name",
+							"value": "Adventure Company",
+							"url": "http://sap.com",
+							"elementType": "link"
+						},
+						{
+							"label": "Address",
+							"value": "Sofia, Boris III, 136A"
+						}
+					
+					]
+				},
+				{
+					"heading": "Other",
+					"elements": [
+						{
+							"label": "Email",
+							"value": "john.doe@sap.com",
+							"emailSubject": "Subject",
+							"elementType": "email"
+						},
+						{
+							"label": "Phone",
+							"value": "+359 888 888 888",
+							"elementType": "mobile"
+						}
+					]
+				}
+			]
+		}
+	]
+}
