@@ -4,7 +4,7 @@ sap.ui.define([
 	"use strict";
 
 	return UIComponent.extend("sap.f.sample.Card.Component", {
-
+   //
 		metadata: {
 			manifest: "json"
 		}
